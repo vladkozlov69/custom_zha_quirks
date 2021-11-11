@@ -92,8 +92,8 @@ class TemperatureMeasurementCluster(LocalDataCluster, TemperatureMeasurement):
 
     def temperature_reported_1(self, value):
         """Temperature reported."""
-        print('endpoint')
-        print(self._endpoint._endpoint_id)
+#        print('endpoint')
+#        print(self._endpoint._endpoint_id)
         if self._endpoint._endpoint_id == 1:
 #            print('updating 1')
             self._update_attribute(self.MEASURED_VALUE_ID, value)
